@@ -5,7 +5,123 @@
 }
 
 body{
-    display: flex;
+    display:flex;
     width:100%;
     height:100vh;
+    background:black;
+}
+
+.container{
+    position:absolute;
+    top:20px;
+    width:100%;
+    text-align: center;
+}
+
+.header{
+    position:relative;
+    top:0;
+    left:0;
+    background-color:white;
+    width:100%;
+    padding:10px;
+}
+
+.header h1
+{
+    color:rgb(0, 0, 0);
+}
+
+.header p{
+    position:relative;
+    color:red;
+    font-weight:400;
+}
+
+.calc-box-dupliacte
+{
+    display:flex;
+    position:absolute;
+    top:86px;
+    width:100%;
+    height:100vh;
+    background-color:rgb(39, 35, 35);
+    padding:30px 10px;
+}
+
+.calc-box-dupliacte .calc-box{
+    position: relative;
+    top:0;
+    left:0px;
+    width:100%;
+    padding:40px;
+    background-color: rgb(238, 54, 54);
+}
+
+.calc-box .type-data{
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.calc-box .type-data label{
+    position:relative;
+    
+}
+
+.calc-box .type-data .input{
+    display: block;
+    position:relative;
+    top:0;
+    left:0;
+    width:100%;
+    justify-content:center;
+}
+
+.calc-box .type-data .input input{
+    padding:5px;
+    border: 1px solid black;
+    border-radius:5px;
+    width:50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.calc-box .type-data .input select{
+    padding:5px;
+    border: 1px solid black;
+    border-radius:5px;
+}
+
+.calc-box .type-data button{
+    position: relative;
+    top:0;
+    left:0;
+    padding:5px;
+    border:1px solid white;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.calc-box .type-data button::before{
+    content: '';
+    background:red;
+    
+}
+
+.calc-box .type-data .btn{
+    background:green;
+    color:white;
+    
+}
+
+.calc-box .type-data .btn2{
+    background-color: rgb(255, 208, 0);
+    border:1px solid black;
+}
+
+.calc-box .type-data .Result-div{
+    display:flex;
+    flex-direction:row; 
 }

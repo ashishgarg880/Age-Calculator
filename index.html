@@ -9,6 +9,42 @@
     <link rel="stylesheet" href="css/index.js">
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h1>Age Calculator</h1>
+            <p>Calculate age from date of Birth and current date</p>
+        </div>
+    </div>
+    <div class="calc-box-dupliacte">
+        <div class="calc-box">
+            <div class="type-data">
+                <label>Date of Birth</label>
+                <div class="input">
+                    <select class="data-ns-month" id="start_month">
+                        <option value="">January</option>
+                    </select>
+                    <select class="data-ns-days" id="start_day">
+                        <option value="">1</option>
+                    </select>
+                    <input type="text" class="data-ns-year" id="start_year" required>
+                </div>    
+                <label>Age at the date of:</label>
+                <div class="input">
+                    <select class="data-ns-month" id="end_month">
+                        <option value="">January</option>
+                    </select>
+                    <select class="data-ns-days" id="end_day">
+                        <option value="">1</option>
+                    </select>
+                    <input type="text" class="data-ns-year" maxlength="4" id="end_year" required>
+                </div>  
+                <button class="btn">Calculate</button>
+                <button class="btn2">Reset</button>
+            </div>
+            <div class="Result-div">
+                <label>Age result</label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
