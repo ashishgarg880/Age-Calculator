@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Project- Calculate DOB</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index.js">
+    <script src="css/index.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,34 +17,122 @@
     </div>
     <div class="calc-box-dupliacte">
         <div class="calc-box">
-            <div class="type-data">
-                <label>Date of Birth</label>
-                <div class="input">
-                    <select class="data-ns-month" id="start_month">
-                        <option value="">January</option>
-                    </select>
-                    <select class="data-ns-days" id="start_day">
-                        <option value="">1</option>
-                    </select>
-                    <input type="text" class="data-ns-year" id="start_year" required>
-                </div>    
-                <label>Age at the date of:</label>
-                <div class="input">
-                    <select class="data-ns-month" id="end_month">
-                        <option value="">January</option>
-                    </select>
-                    <select class="data-ns-days" id="end_day">
-                        <option value="">1</option>
-                    </select>
-                    <input type="text" class="data-ns-year" maxlength="4" id="end_year" required>
-                </div>  
-                <button class="btn">Calculate</button>
-                <button class="btn2">Reset</button>
-            </div>
-            <div class="Result-div">
-                <label>Age result</label>
-            </div>
-        </div>
+            <form action="css/index.js" method="get">
+                <div class="type-data">
+                    <label>Date of Birth</label>
+                    <div class="input">
+                        <select class="data-ns-month" id="start_month">
+                            <option value="0">January</option>
+                            <option value="1">Febuary</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8" selected>September</option>
+                            <option value="9">Octomber</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+                        </select>
+                        <select class="data-ns-days" id="start_day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+
+                        </select>
+                        <input type="text" class="data-ns-year" id="start_year" required maxlength="4">
+                    </div>    
+                    <label>Age at the date of:</label>
+                    <div class="input">
+                        <select class="data-ns-month" id="end_month">
+                            <option value="0">January</option>
+                            <option value="1">Febuary</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6" selected>July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">Octomber</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+                        </select>
+                        <select class="data-ns-days" id="end_day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <input type="text" class="data-ns-year" maxlength="4" id="end_year" required>
+                    </div>  
+                    <input type="button" class="btn" value="Calculate" onClick="calc()"></input>
+                    <input type="reset" class="btn2" value="Reset"></input>
+                </div>
+                <div class="Result-div">
+                    <label>Age result</label>
+                    <div class="text-area">
+                        <textarea readonly="readonly"></textarea>
+                    </div>
+                </div>
+            </form> 
+        </div>   
     </div>
 </body>
 </html>
