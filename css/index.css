@@ -71,31 +71,34 @@ body{
 }
 
 .calc-box .type-data .input{
-    display:block;
+    display: flex;
     position:relative;
     top:0;
     left:0;
     width:100%;
-    justify-content:center;
+    margin-top:10px;
+    margin-bottom:20px;
+    justify-content:space-between;
 }
 
 .calc-box .type-data .input input{
     position:relative;
-    padding:5px;
     border: 1px solid black;
     border-radius:5px;
-    width:50px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    width:100px;   
+    padding:5px;
+    text-align: center;
 }
 
 .calc-box .type-data .input select{
     padding:5px;
     border: 1px solid black;
     border-radius:5px;
+    width:100px;
+    text-align: center;
 }
 
-.calc-box .type-data input[type=button],input[type=reset]{
+.calc-box .type-data input[type=submit],input[type=reset]{
     position: relative;
     top:0;
     left:0;
@@ -146,20 +149,18 @@ body{
 }
 
 .text-area textarea{
-    margin: 0px;
+
     width: 359px;
     height: 181px;
     position:relative;
     top:20px;
+    font-size:16px;
     background-color: black;
     color:white;
     border:1px solid black;
     border-radius:5px;
     resize: none;
-}
-
-.header-h2{
-    color:white;
+    padding:20px 30px;
 }
 
 
@@ -168,8 +169,13 @@ body{
         width:100%;
     }
 
-    .calc-box .type-data .input select{
-        margin-top:10px;
-        margin-bottom: 20px;
+    .calc-box .type-data .input{
+        display:inline-block;
+        position:relative;
+        top:0;
+        left:0;
+        width:100%;
+        margin:10px;
+        justify-content:center;
     }
 }
